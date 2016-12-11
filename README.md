@@ -3,8 +3,8 @@ Synchronizes weather information from OpenWeatherMap on Android Phones and Table
 
 ##Installation Instuctions
 1. Download `google-services.json` for this project and place it in app module. You can generate it [here](https://support.google.com/firebase/answer/7015592).
-2. Add Open weather map api key in `app/build.gradle and sunshinewear/build.gradle files`.
-3. Also, add google places api key in `app/src/main/res/values/strings.xml file`.
+2. Add Open weather map api key in `app/build.gradle and sunshinewear/build.gradle` files.
+3. Also, add google places api key in `app/src/main/res/values/strings.xml` file.
 4. Install the watchface by running this command in terminal in the project directory : `./gradlew :sunshinewear:installDebug`
 5. Set the watch face manually in emulator.
 6. Make sure that the android device is properly paired with the android wear. You can pair your device with android wear (emulator) using these instructions.
