@@ -1,52 +1,17 @@
-Advanced Android Sample App
-===================================
+#Sunshine weather app
+Synchronizes weather information from OpenWeatherMap on Android Phones and Tablets. It also contains custom watch face for android wear.
 
-Synchronizes weather information from OpenWeatherMap on Android Phones and Tablets. Used in the Udacity Advanced Android course.
+##Installation Instuctions
+1. Download google-services.json for this project and place it in app module. You can generate it here.
+2. Add Open weather map api key in app/build.gradle and sunshinewear/build.gradle files.
+3. Also, add google places api key in app/src/main/res/values/strings.xml file.
+4. Install the watchface by running this command in terminal in the project directory : ./gradlew :sunshinewear:installDebug
+5. Set the watch face manually in emulator.
+6. Make sure that the android device is properly paired with the android wear. You can pair your device with android wear (emulator) using these instructions.
+7. Install the android app in your device using ./gradlew :app:installDebug command in terminal in the main directory of the project.
+8. Now whenever the android application updates its weather data, it will send the current weather info to the android wear via a dataItem and notify the android wear to update its weather data asap. This will show latest weather info on the android wear watch face.
 
-Pre-requisites
---------------
-Android SDK 21 or Higher
-Build Tools version 21.1.2
-Android Support AppCompat 22.2.0
-Android Support Annotations 22.2.0
-Android Support GridLayout 22.2.0
-Android Support CardView 22.2.0
-Android Support Design 22.2.0
-Android Support RecyclerView 22.2.0
-Google Play Services GCM 7.0.0
-BumpTech Glide 3.5.2
+##Watch face screenshot
+Will be added later.
 
-
-Getting Started
----------------
-This sample uses the Gradle build system.  To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
-
-Support
--------
-
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
-
-License
--------
-Copyright 2015 The Android Open Source Project, Inc.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
-
+Initially forked from : https://github.com/udacity/Advanced_Android_Development
