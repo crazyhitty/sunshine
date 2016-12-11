@@ -7,7 +7,7 @@ Synchronizes weather information from OpenWeatherMap on Android Phones and Table
 3. Also, add google places api key in `app/src/main/res/values/strings.xml` file.
 4. Install the watchface by running this command in terminal in the project directory : `./gradlew :sunshinewear:installDebug`
 5. Set the watch face manually in emulator.
-6. Make sure that the android device is properly paired with the android wear. You can pair your device with android wear (emulator) using these instructions.
+6. Make sure that the android device is properly paired with the android wear. You can pair your device with android wear (emulator) using [these instructions](https://developer.android.com/training/wearables/apps/creating.html#SetupEmulator).
 7. Install the android app in your device using `./gradlew :app:installDebug` command in terminal in the main directory of the project.
 8. Now whenever the android application updates its weather data, it will send the current weather info to the android wear via a dataItem and notify the android wear to update its weather data asap. This will show latest weather info on the android wear watch face.
 
